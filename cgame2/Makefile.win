@@ -1,0 +1,108 @@
+# Project: cgame
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = cgame.o console_draw2.o kb_input2.o background.o bar.o player.o groundbase.o front.o top.o monster.o monster2.o open.o menu.o roomone.o talk.o choose.o dead.o end.o goal.o backgroundb.o barb.o frontb.o roomtwo.o topb.o monsterb.o monsterb2.o goalb.o $(RES)
+LINKOBJ  = cgame.o console_draw2.o kb_input2.o background.o bar.o player.o groundbase.o front.o top.o monster.o monster2.o open.o menu.o roomone.o talk.o choose.o dead.o end.o goal.o backgroundb.o barb.o frontb.o roomtwo.o topb.o monsterb.o monsterb2.o goalb.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -g3 -fmessage-length=0 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = cgame2.exe
+CXXFLAGS = $(CXXINCS)   -ansi -traditional-cpp -w -g3 -fmessage-length=0
+CFLAGS = $(INCS)   -ansi -traditional-cpp -w -g3 -fmessage-length=0
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before cgame2.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "cgame2.exe" $(LIBS)
+
+cgame.o: cgame.c
+	$(CC) -c cgame.c -o cgame.o $(CFLAGS)
+
+console_draw2.o: console_draw2.c
+	$(CC) -c console_draw2.c -o console_draw2.o $(CFLAGS)
+
+kb_input2.o: kb_input2.c
+	$(CC) -c kb_input2.c -o kb_input2.o $(CFLAGS)
+
+background.o: background.c
+	$(CC) -c background.c -o background.o $(CFLAGS)
+
+bar.o: bar.c
+	$(CC) -c bar.c -o bar.o $(CFLAGS)
+
+player.o: player.c
+	$(CC) -c player.c -o player.o $(CFLAGS)
+
+groundbase.o: groundbase.c
+	$(CC) -c groundbase.c -o groundbase.o $(CFLAGS)
+
+front.o: front.c
+	$(CC) -c front.c -o front.o $(CFLAGS)
+
+top.o: top.c
+	$(CC) -c top.c -o top.o $(CFLAGS)
+
+monster.o: monster.c
+	$(CC) -c monster.c -o monster.o $(CFLAGS)
+
+monster2.o: monster2.c
+	$(CC) -c monster2.c -o monster2.o $(CFLAGS)
+
+open.o: open.c
+	$(CC) -c open.c -o open.o $(CFLAGS)
+
+menu.o: menu.c
+	$(CC) -c menu.c -o menu.o $(CFLAGS)
+
+roomone.o: roomone.c
+	$(CC) -c roomone.c -o roomone.o $(CFLAGS)
+
+talk.o: talk.c
+	$(CC) -c talk.c -o talk.o $(CFLAGS)
+
+choose.o: choose.c
+	$(CC) -c choose.c -o choose.o $(CFLAGS)
+
+dead.o: dead.c
+	$(CC) -c dead.c -o dead.o $(CFLAGS)
+
+end.o: end.c
+	$(CC) -c end.c -o end.o $(CFLAGS)
+
+goal.o: goal.c
+	$(CC) -c goal.c -o goal.o $(CFLAGS)
+
+backgroundb.o: backgroundb.c
+	$(CC) -c backgroundb.c -o backgroundb.o $(CFLAGS)
+
+barb.o: barb.c
+	$(CC) -c barb.c -o barb.o $(CFLAGS)
+
+frontb.o: frontb.c
+	$(CC) -c frontb.c -o frontb.o $(CFLAGS)
+
+roomtwo.o: roomtwo.c
+	$(CC) -c roomtwo.c -o roomtwo.o $(CFLAGS)
+
+topb.o: topb.c
+	$(CC) -c topb.c -o topb.o $(CFLAGS)
+
+monsterb.o: monsterb.c
+	$(CC) -c monsterb.c -o monsterb.o $(CFLAGS)
+
+monsterb2.o: monsterb2.c
+	$(CC) -c monsterb2.c -o monsterb2.o $(CFLAGS)
+
+goalb.o: goalb.c
+	$(CC) -c goalb.c -o goalb.o $(CFLAGS)
